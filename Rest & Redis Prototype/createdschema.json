@@ -1,0 +1,145 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "_type": {
+      "type": "string"
+    },
+    "objectType": {
+      "type": "string"
+    },
+    "_id": {
+      "type": "string"
+    },
+    "objectId": {
+      "type": "string"
+    },
+    "creationDate": {
+      "type": "string"
+    },
+    "planCostShares": {
+      "type": "object",
+      "properties": {
+        "copay": {
+          "type": "integer"
+        },
+        "objectType": {
+          "type": "string"
+        },
+        "_type": {
+          "type": "string"
+        },
+        "objectId": {
+          "type": "string"
+        },
+        "_id": {
+          "type": "string"
+        },
+        "deductible": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "copay",
+        "objectType",
+        "_type",
+        "objectId",
+        "_id",
+        "deductible"
+      ]
+    },
+    "linkedPlanServices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "objectType": {
+            "type": "string"
+          },
+          "_type": {
+            "type": "string"
+          },
+          "objectId": {
+            "type": "string"
+          },
+          "_id": {
+            "type": "string"
+          },
+          "planserviceCostShares": {
+            "type": "object",
+            "properties": {
+              "copay": {
+                "type": "integer"
+              },
+              "objectType": {
+                "type": "string"
+              },
+              "_type": {
+                "type": "string"
+              },
+              "objectId": {
+                "type": "string"
+              },
+              "_id": {
+                "type": "string"
+              },
+              "deductible": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "copay",
+              "objectType",
+              "_type",
+              "objectId",
+              "_id",
+              "deductible"
+            ]
+          },
+          "linkedService": {
+            "type": "object",
+            "properties": {
+              "objectType": {
+                "type": "string"
+              },
+              "_type": {
+                "type": "string"
+              },
+              "objectId": {
+                "type": "string"
+              },
+              "_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "objectType",
+              "_type",
+              "objectId",
+              "_id"
+            ]
+          }
+        },
+        "required": [
+          "objectType",
+          "_type",
+          "objectId",
+          "_id",
+          "planserviceCostShares",
+          "linkedService"
+        ]
+      }
+    }
+  },
+  "required": [
+    "_type",
+    "objectType",
+    "_id",
+    "objectId",
+    "creationDate",
+    "planCostShares",
+    "linkedPlanServices"
+  ]
+}
+Go to top
+Home | About | Contact | Reading | Resources | Previous Version

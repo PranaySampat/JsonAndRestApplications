@@ -1,0 +1,56 @@
+{
+	"_type": "plan",
+	"objectType": "plan",
+	"_id": "12xvxc345",
+	"objectId": "12xvxc345",
+	"creationDate": "12-2016",
+	"planCostShares": {
+		"copay": 10,
+		"objectType": "membercostshare",
+		"_type": "membercostshare",
+		"objectId": "1234vxc2324",
+		"_id": "1234vxc2324",
+		"deductible": 6000
+	},
+	"linkedPlanServices":[ {
+		"objectType": "planservice",
+		"_type": "planservice",
+		"objectId": "27283xvx9",
+		"_id": "27283xvx9",
+		"planserviceCostShares": {
+			"copay": 125,
+			"objectType": "membercostshare",
+			"_type": "membercostshare",
+			"objectId": "1234512xvc1314",
+			"_id": "1234512xvc1314",
+			"deductible": 10
+		},
+		"linkedService": {
+			"objectType": "service",
+			"_type": "service",
+			"objectId": "1234520xvc30",
+			"_id": "1234520xvc30"
+		}
+	},{
+		"objectType": "planservice",
+		"_type": "planservice",
+		"objectId": "27283xvx9a",
+		"_id": "27283xvx9a",	
+		"planserviceCostShares": {
+			"copay": 125,
+			"objectType": "membercostshare",
+			"_type": "membercostshare",
+			"objectId": "1234512xvc1314a",
+			"_id": "1234512xvc1314a",
+			"deductible": 10
+		},
+		"linkedService": {
+			"objectType": "service",
+			"_type": "service",
+			"objectId": "1234520xvc30a",
+			"_id": "1234520xvc30a"
+		}
+	}
+	
+	]
+}
